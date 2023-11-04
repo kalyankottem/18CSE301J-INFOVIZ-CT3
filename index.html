@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Science Data Visualizations</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color */
+        body {
+            background: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Create a navigation menu */
+        .navbar {
+            background: #087ede;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .your-info{
+            font-size: 20px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            justify-content: space-between;
+        }
+
+        /* Create a container for content */
+        .container {
+            margin: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* Style headings */
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        /* Style charts and visualizations as needed */
+        .chart {
+            margin: 20px;
+            padding: 1px;
+            /* Add your chart-specific styles here */
+        }
+
+        /* Additional styling for the introduction section */
+        .intro {
+            padding: 40px 20px;
+        }
+
+        .intro h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .intro p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+        
+        /* Styling for scientists and photos section */
+        .scientists {
+            padding: 40px 20px;
+        }
+        .scientisowott{
+            display: flex;
+        }
+
+        .scientists h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .scientists img {
+            max-width: 100px;
+            margin: 20px 20px;
+            border-radius: 50%;
+        }
+
+        .scientists p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        /* Additional styling for the data link and your info sections */
+        .data-link, .your-info {
+            padding: 40px 20px;
+        }
+
+        .data-link h2, .your-info h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .data-link p, .your-info p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#"> 18CSE301J Information Visualization Project</a>
+        <div class="nav-right">
+            <a href="#home">Home</a>
+            <a href="#dave-Anna">Scientists</a>
+            <a href="#visualizations">Visualizations</a>
+            <a href="#data-link">Data Link</a>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="intro" id="home">
+            <h1>Dive into the World of Top 2% Scientists by Stanford University</h1>
+            <p>Discover the Pinnacle of Human Knowledge! At Stanford University, we take you on an expedition into the world of exceptional scholarly achievement. Our carefully curated database introduces you to the top 2% of scientists across the globe. Within this expansive dataset, you'll find standardized insights into citations, h-indices, and an array of vital metrics, unveiling the incredible accomplishments of scientific luminaries worldwide.</p><br>
+            <p>As you delve deeper into their work, you'll gain a profound understanding of the far-reaching impact of their groundbreaking discoveries and transformative contributions. These visionaries have left an indelible mark on their respective fields, driving scientific innovation to new heights.</p><br>
+            <p>Join us in celebrating the outstanding individuals who are pioneering advancements across diverse domains. Witness how their relentless pursuit of knowledge and innovation is shaping the future and contributing to the betterment of humanity. With every exploration of their work, you'll recognize how these scientific luminaries are redefining the boundaries of human potential, one remarkable discovery at a time.</p>        
+        </div>
+
+        <div class="section" id="top-scientists">
+            <h2>Meet the Scientists</h2>
+            <div class="scientisowott">
+                <div class="scientist-card">
+                    <img src="George_Davey-Smith.jpg" id="dave-Anna" alt="Davey Smith">
+                    <h3 >Davey Smith</h3>
+                    <p><strong>Birthdate:</strong> May 9, 1959</p>
+                    <p><strong>Birthplace:</strong> UK</p>
+                    <p><strong>Known for:</strong> Research on health inequalities and epidemiology.</p>
+                    <p><strong>Thesis:</strong> "Physical fitness and risk factors for coronary heart disease" (1991)</p>
+                </div>
+                <div class="scientist-card">
+                    <img src="Bert_Vogelstein.jpg" alt="Bert Vogelstein">
+                    <h3>Bert Vogelstein</h3>
+                    <p><strong>Birthdate:</strong> June 2, 1949</p>
+                    <p><strong>Birthplace:</strong> Baltimore, Maryland, U.S.</p>
+                    <p><strong>Known for:</strong> Research in oncology, particularly the p53 gene.</p>
+                    <p><strong>Awards:</strong> Breakthrough Prize in Life Sciences (2013), Warren Triennial Prize (2014)</p>
+                </div>
+                <div class="scientist-card">
+                    <img src="Konstantin_Novoselov.jpg" alt="Konstantin Novoselov">
+                    <h3>Konstantin Novoselov</h3>
+                    <p><strong>Birthdate:</strong> August 23, 1974</p>
+                    <p><strong>Birthplace:</strong> Nizhny Tagil, Russia</p>
+                    <p><strong>Known for:</strong> Discovering and researching graphene.</p>
+                    <p><strong>Awards:</strong> Nobel Prize in Physics (2010), EuroPhysics Prize (2008)</p>
+                </div>
+            </div>
+            
+            <div class="section" id="discovery-process">
+                <h2>The Journey of Scientific Discovery</h2>
+                <p><strong>Exploring Excellence:</strong> At the initiation of our endeavor, we employ rigorous analysis of scholarly metrics and utilize data-based approaches to unveil the top 2% of scientists. This selection process is grounded in their remarkable scholarly achievements, citation records, and overall impact. This method ensures an equitable and exhaustive approach to recognizing remarkable contributors across various scientific domains.</p>
+                
+                <p><strong>Evaluating Holistically:</strong>  Following the identification of these exceptional scientists, we proceed to a comprehensive evaluation of their body of work. This involves an examination of factors such as their publication portfolio, the caliber of journals in which they've published, citation statistics, and the h-index. This thorough assessment offers invaluable insights into the extent and profundity of their contributions.</p>
+
+                <h2>Assessing Research Impact</h2>
+                <p><strong>Measuring Influence: </strong> Our project is dedicated to measuring and scrutinizing the influence exerted by these distinguished scientists through their research endeavors. We delve into how their work has influenced and advanced their respective fields, as well as the broader implications for society, including technological advancements, medical breakthroughs, and a deepened comprehension of the natural world.</p>
+            </div>
+            
+            
+            
+        </div>
+
+
+        <div class="chart section" id="visualizations">
+            <h2>Visualizations</h2>
+            <!-- Add visualizations and descriptions here -->
+            <div class="section" id="publication-trends">
+                <h2>Publication Trends Over Time</h2>
+                <p>Discover how scientific publications have evolved over the years. This interactive chart displays the number of papers published annually, allowing you to identify trends and patterns.</p>
+                <div class="chart">
+                    <div class='tableauPlaceholder' id='viz1699128538762' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pu&#47;publicationtrends&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='publicationtrends&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pu&#47;publicationtrends&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1699128538762');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
+    
+            <div class="section" id="citation-analysis">
+                <h2>Citation Analysis</h2>
+                <p>Explore the relationship between the number of papers published and total citations. This analysis helps identify influential research and authors within the scientific community.</p>
+                <div class="chart">
+                    <div class='tableauPlaceholder' id='viz1699128469043' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ct&#47;ct3_16991284363420&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ct3_16991284363420&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ct&#47;ct3_16991284363420&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1699128469043');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
+    
+            <div class="section" id="country-analysis">   
+            <div class="section" id="scientific-field-analysis">
+                <h2>Scientific Field Analysis</h2>
+                <p>Explore the distribution of scientists across various scientific fields. This treemap visualization offers insights into the representation of different fields within the scientific community.</p>
+                <div class="chart">
+                    <div class='tableauPlaceholder' id='viz1699128936978' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;researchfieldanalysis&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='researchfieldanalysis&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;researchfieldanalysis&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1699128936978');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-link" id="data-link">
+            <h2>Access the Dataset</h2>
+            <p>If you're interested in exploring the dataset used in these visualizations, you can access it <a href="https://docs.google.com/spreadsheets/d/1naIj3IvsjTX8-fjKQizd1mfXLFeg9Emb/edit?usp=sharing&ouid=118019982790415020805&rtpof=true&sd=true">here</a>.</p>
+        </div>
+
+        <div class="your-info" id="your-info">
+            <strong>Kottem Kalyan, RA2111003011834</strong>
+        </div>
+    </div>
+</body>
+</html>
